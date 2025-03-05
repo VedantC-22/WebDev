@@ -1,42 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" href="assets/logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="main">
         <div class="navbar">
-           <div class="right-nav">
+            <div class="right-nav nav-items">
                 <img src="assets/logo.png" alt="">
-           </div>
-           <div class="mid-nav">
+            </div>
+            <div class="mid-nav nav-items">
                 <div class="home-icon">
                     <i class="fa-solid fa-house "></i>
                 </div>
-               
+
                 <div class="searchbar">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" name="search-text" id="search"  placeholder="What do you want to play? ">
+                    <input type="text" name="search-text" id="search" placeholder="What do you want to play? ">
                 </div>
-           </div>
-           <div class="left-nav"></div>
+            </div>
+            <div class="left-nav">
+                <div class="explore-div">
+                    Explore Premium
+                </div>
+                <div class="install-div">
+                    <i class="fa-regular fa-circle-down"></i> Install App
+                </div>
+                <div class="profile-div">
+                    V
+                </div>
+            </div>
         </div>
         <div class="mid">
-            <div class="sidebar"></div>
-            <div class="main-content"></div>
+            <div class="sidebar">
+                <div class="library">
+                    <div class="left">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true"
+                            class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z">
+                            </path>
+                        </svg> Your Library
+                    </div>
+                    <div class="right">
+                        <i class="fa-solid fa-plus"></i><i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-options">
+                    <div class="content">
+                        <div class="title">Lorem ipsum dolor sit, amet.</div>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    
+                    <div class="btn">
+                        Create Playlist
+                    </div>
+                </div>
+
+                <div class="lib-options">
+                    <div class="content">
+                        <div class="title">Lorem ipsum dolor sit, amet.</div>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                   
+                    <div class="btn">
+                        Create Playlist
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+
+            </div>
         </div>
-        
+
         <div class="music-player"></div>
     </div>
 </body>
+
 </html>
